@@ -8,7 +8,7 @@ Open `index.html` in a modern browser. The app is static HTML, CSS, and JavaScri
 
 ## Publish with GitHub Pages
 
-This repository deploys the static site to GitHub Pages from the `main` branch using the workflow in `.github/workflows/pages.yml`. After the first successful deployment, the site is available at:
+The site is published with GitHub Pages from the `main` branch and repository root (`/(root)`). After Pages finishes publishing, the site is available at:
 
 `https://Karan1099896.github.io/mino-totally-free-open/`
 
