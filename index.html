@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#171a3c" />
+  <meta name="description" content="Mini 2.0 — your free, friendly path to learning web development." />
+  <title>Learn | Mini 2.0</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <div class="dashboard-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="home.html" aria-label="Mini 2.0 home"><span class="brand-icon">m<span>·</span></span><span>mini<span class="brand-version"> 2.0</span></span></a>
+      <button class="course-switcher" id="courseSwitch" aria-expanded="false"><span class="switch-label">CURRENT COURSE</span><strong id="currentCourseName">Full-Stack Developer</strong><span class="switch-chevron">⌄</span><span class="switch-progress"><i></i></span></button>
+      <div class="track-menu" id="trackMenu" aria-label="Choose a learning path"></div>
+      <nav class="side-nav" aria-label="Main navigation">
+        <a class="side-link active" href="#learn" data-nav="Learn"><span class="nav-icon">▤</span>Learn</a>
+        <a class="side-link" href="#practice" data-nav="Practice"><span class="nav-icon bolt">ϟ</span>Practice</a>
+        <a class="side-link" href="#build" data-nav="Build"><span class="nav-icon">▣</span>Build</a>
+        <a class="side-link" href="#courses" data-nav="Courses"><span class="nav-icon">▯</span>Courses</a>
+        <a class="side-link" href="#league" data-nav="Leaderboard"><span class="nav-icon">♜</span>Leaderboard</a>
+        <a class="side-link" href="#free" data-nav="Free tools"><span class="nav-icon">▱</span>Free tools</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="free-callout"><span class="free-star">✦</span><span>EVERYTHING IS FREE</span><b>Learn without limits.</b><small>All lessons. All projects.<br />Always free.</small></div>
+        <div class="resources"><span class="resource-chip"><b>◉</b><span id="coinCount">200</span></span><span class="resource-chip"><b class="flame">♨</b><span id="streakCount">0 days</span></span></div>
+        <button class="profile-button" id="profileButton"><span class="avatar">M</span><span class="profile-name">Mini learner<small>Level 1 · Beginner</small></span><span class="profile-chevron">⌄</span></button>
+      </div>
+    </aside>
+
+    <main class="main-area" id="learn">
+      <button class="mobile-menu" id="mobileMenu" aria-label="Open navigation">☰</button>
+      <header class="course-heading">
+        <div class="course-emblem"><span>▦</span><i>✦</i></div>
+        <div class="course-title"><h1 id="courseTitle">Intro to Web Development</h1><p id="courseDescription">Create webpages using HTML and CSS</p></div>
+        <div class="section-switcher">
+          <button id="previousSection" aria-label="Previous section" disabled>‹</button>
+          <button id="sectionPicker" aria-expanded="false">SECTION <b id="sectionNumber">1</b> OF 20</button>
+          <button id="nextSection" aria-label="Next section">›</button>
+          <div class="section-menu" id="sectionMenu"></div>
+        </div>
+      </header>
+
+      <section class="lesson-list" id="lessonList" aria-label="Lessons in this section">
+        <button class="lesson-row selected" data-lesson="Discovering HTML and Tags" data-type="LEARN" data-open="true"><span class="lesson-number">01</span><span class="lesson-name">Discovering HTML and Tags</span><span class="lesson-type learn"><i>▯</i> LEARN</span><span class="lesson-count">0/2</span><span class="lesson-action">➜</span></button>
+        <button class="lesson-row locked" data-lesson="Structuring Text with Tags" data-type="LEARN"><span class="lesson-number">02</span><span class="lesson-name">Structuring Text with Tags</span><span class="lesson-type learn"><i>▯</i> LEARN</span><span class="lock-icon">♙</span></button>
+        <div class="lesson-group"><button class="lesson-row locked" data-lesson="HTML Basics 1" data-type="PRACTICE"><span class="lesson-number">03</span><span class="lesson-name">HTML Basics 1</span><span class="lesson-type practice"><i>ϟ</i> PRACTICE</span><span class="lock-icon">♙</span></button><button class="supercharge locked" data-lesson="HTML Basics 1 bonus" data-type="BONUS"><span>ϟ &nbsp;SUPERCHARGE</span><span class="lock-icon">♙</span></button></div>
+        <button class="lesson-row locked" data-lesson="Creating Links" data-type="LEARN"><span class="lesson-number">04</span><span class="lesson-name">Creating Links</span><span class="lesson-type learn"><i>▯</i> LEARN</span><span class="lock-icon">♙</span></button>
+        <button class="lesson-row locked" data-lesson="Adding Images" data-type="LEARN"><span class="lesson-number">05</span><span class="lesson-name">Adding Images</span><span class="lesson-type learn"><i>▯</i> LEARN</span><span class="lock-icon">♙</span></button>
+        <div class="lesson-group"><button class="lesson-row locked" data-lesson="HTML Basics 2" data-type="PRACTICE"><span class="lesson-number">06</span><span class="lesson-name">HTML Basics 2</span><span class="lesson-type practice"><i>ϟ</i> PRACTICE</span><span class="lock-icon">♙</span></button><button class="supercharge locked" data-lesson="HTML Basics 2 bonus" data-type="BONUS"><span>ϟ &nbsp;SUPERCHARGE</span><span class="lock-icon">♙</span></button></div>
+        <article class="project-card"><div class="project-thumb"><div class="thumb-avatar">E</div><b>Emmy</b><small>Aspiring Software Developer</small><span>Twitter</span><span>TikTok</span></div><div class="project-copy"><div><span class="lesson-number">07</span><strong>Linktree</strong></div><p>Get ready to build your very own Linktree-style page, where you can showcase all your socials and other links you care about in one spot.</p><div class="project-meta"><span>PART 1</span><span class="guided-pill">〈/〉 &nbsp;GUIDED PROJECT</span><span class="lock-icon">♙</span></div></div></article>
+        <button class="lesson-row locked" data-lesson="Boilerplate code" data-type="LEARN"><span class="lesson-number">08</span><span class="lesson-name">Boilerplate code</span><span class="lesson-type learn"><i>▯</i> LEARN</span><span class="lock-icon">♙</span></button>
+        <button class="lesson-row locked" data-lesson="Stylesheet and Basic Selectors" data-type="LEARN"><span class="lesson-number">09</span><span class="lesson-name">Stylesheet and Basic Selectors</span><span class="lesson-type learn"><i>▯</i> LEARN</span><span class="lock-icon">♙</span></button>
+        <button class="lesson-row locked" data-lesson="Styling Text" data-type="LEARN"><span class="lesson-number">10</span><span class="lesson-name">Styling Text</span><span class="lesson-type learn"><i>▯</i> LEARN</span><span class="lock-icon">♙</span></button>
+        <button class="lesson-row locked" data-lesson="Setting Size and Borders" data-type="LEARN"><span class="lesson-number">11</span><span class="lesson-name">Setting Size and Borders</span><span class="lesson-type learn"><i>▯</i> LEARN</span><span class="lock-icon">♙</span></button>
+        <div class="lesson-group"><button class="lesson-row locked" data-lesson="CSS Basics 1" data-type="PRACTICE"><span class="lesson-number">12</span><span class="lesson-name">CSS Basics 1</span><span class="lesson-type practice"><i>ϟ</i> PRACTICE</span><span class="lock-icon">♙</span></button><button class="supercharge locked" data-lesson="CSS Basics 1 bonus" data-type="BONUS"><span>ϟ &nbsp;SUPERCHARGE</span><span class="lock-icon">♙</span></button></div>
+        <button class="lesson-row locked" data-lesson="Building with the Box Model" data-type="LEARN"><span class="lesson-number">13</span><span class="lesson-name">Building with the Box Model</span><span class="lesson-type learn"><i>▯</i> LEARN</span><span class="lock-icon">♙</span></button>
+        <button class="lesson-row locked" data-lesson="Adding Padding with One Line" data-type="LEARN"><span class="lesson-number">14</span><span class="lesson-name">Adding Padding with One Line</span><span class="lesson-type learn"><i>▯</i> LEARN</span><span class="lock-icon">♙</span></button>
+        <button class="lesson-row locked" data-lesson="Styling Corners with One Line" data-type="LEARN"><span class="lesson-number">15</span><span class="lesson-name">Styling Corners with One Line</span><span class="lesson-type learn"><i>▯</i> LEARN</span><span class="lock-icon">♙</span></button>
+        <div class="lesson-group"><button class="lesson-row locked" data-lesson="CSS Basics 2" data-type="PRACTICE"><span class="lesson-number">16</span><span class="lesson-name">CSS Basics 2</span><span class="lesson-type practice"><i>ϟ</i> PRACTICE</span><span class="lock-icon">♙</span></button><button class="supercharge locked" data-lesson="CSS Basics 2 bonus" data-type="BONUS"><span>ϟ &nbsp;SUPERCHARGE</span><span class="lock-icon">♙</span></button></div>
+        <article class="project-card project-card-second"><div class="project-thumb second-thumb"><div class="thumb-avatar">E</div><b>Emmy</b><small>Aspiring Software Developer</small><span>Twitter</span><span>TikTok</span></div><div class="project-copy"><div><span class="lesson-number">17</span><strong>Linktree</strong></div><p>Now that you've set up the HTML of your Linktree-style page, it's time to make it pop! In this part, we'll use CSS to style and bring personality to your page.</p><div class="project-meta"><span>PART 2</span><span class="guided-pill">〈/〉 &nbsp;GUIDED PROJECT</span><span class="lock-icon">♙</span></div></div></article>
+        <button class="lesson-row locked" data-lesson="Making it responsive" data-type="LEARN"><span class="lesson-number">18</span><span class="lesson-name">Making it responsive</span><span class="lesson-type learn"><i>▯</i> LEARN</span><span class="lock-icon">♙</span></button>
+        <button class="lesson-row locked" data-lesson="Finishing touches" data-type="LEARN"><span class="lesson-number">19</span><span class="lesson-name">Finishing touches</span><span class="lesson-type learn"><i>▯</i> LEARN</span><span class="lock-icon">♙</span></button>
+        <button class="lesson-row locked" data-lesson="Web Development review" data-type="PRACTICE"><span class="lesson-number">20</span><span class="lesson-name">Web Development review</span><span class="lesson-type practice"><i>ϟ</i> PRACTICE</span><span class="lock-icon">♙</span></button>
+        <button class="next-track"><span><small>NEXT SECTION</small><strong>Interactive Webpages</strong><small>Use HTML and JavaScript to create interactive webpages</small></span><b>Continue learning&nbsp; ›</b></button>
+      </section>
+      <footer class="main-footer"><span>MINI 2.0 · A LITTLE CODE GOES A LONG WAY</span><a href="home.html">Visit Mini home ↗</a></footer>
+    </main>
+
+    <aside class="right-rail">
+      <section class="rail-card free-card" id="free"><div class="free-banner"><span>✳</span><b>100% FREE</b></div><div class="rail-card-content"><h2>Ready for more?</h2><p>Unlock your potential with guided lessons, hands-on practice, and projects you can share.</p><a href="#courses">Keep learning for free <span>↗</span></a></div></section>
+      <section class="rail-card league-card" id="league"><div class="league-date">THIS WEEK</div><div class="league-icon">✿</div><h2>Keep it up!</h2><p>You finished <b>#46 of 50</b> in the Wood League.</p><a href="#league">See leaderboard</a></section>
+      <section class="rail-card certificate-card"><div class="certificate-icon"><span>▤</span><b>✦</b></div><div class="certificate-info"><h2>Certificate progress</h2><div class="cert-progress"><i id="certificateBar"></i></div><div class="cert-details"><span><b id="certificatePercent">0%</b> complete</span><span><b id="certificateCount">0</b>/<b id="certificateTotal">20</b></span></div></div><button id="courseOverview">See course overview</button></section>
+      <section class="rail-card daily-card"><div class="daily-art">✦</div><div><span>YOUR DAILY GOAL</span><h2>Little steps count.</h2><p>Finish one lesson today to keep your streak going.</p></div><button id="dailyGoal">Start a lesson&nbsp; ↗</button></section>
+    </aside>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="modal-backdrop" id="lessonModal" aria-hidden="true"><section class="lesson-modal" role="dialog" aria-modal="true" aria-labelledby="modalHeading"><button class="modal-close" id="modalClose" aria-label="Close lesson">×</button><div class="modal-eyebrow" id="modalEyebrow">LESSON 01 <span>·</span> HTML BASICS</div><div class="modal-progress"><i></i><i></i></div><div class="modal-emoji" id="modalEmoji">🌱</div><h2 id="modalHeading">Discovering HTML and Tags</h2><p id="modalDescription">HTML is the structure behind every webpage. Tags tell your browser what each part of the page means.</p><div class="lesson-example"><span id="exampleLabel">HERE'S A HEADING</span><code id="exampleCode">&lt;h1&gt;Hello, world!&lt;/h1&gt;</code><div class="example-result"><small>IN THE BROWSER</small><strong id="exampleOutput">Hello, world!</strong></div></div><h3 id="modalQuestion">Which tag creates a main heading?</h3><div class="modal-answers" id="modalAnswers"></div><div class="answer-feedback" aria-live="polite"></div><button class="modal-continue" disabled>Check answer <span>→</span></button></section></div>
+  <script src="dashboard.js"></script>
+</body>
+</html>
+
+
