@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#faf9f6" />
+  <meta name="description" content="Learn to code with Mini 2.0: friendly, hands-on lessons and projects, always free." />
+  <title>Mini 2.0 — Learn to code, for free</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Mini 2.0 home"><span class="brand-mark">m<span>·</span></span><span>mini<span class="brand-light"> 2.0</span></span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#paths">Learn</a><a href="#courses">Courses</a><a href="#projects">Projects</a>
+    </nav>
+    <div class="header-actions"><button class="login-link" data-toast="You're already on the free plan ✨">Log in</button><a class="button button-dark button-small" href="#paths">Start for free <span>↗</span></a></div>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main id="home">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="sparkle">✳</span> YOUR NEXT SKILL STARTS HERE</div>
+        <h1>Code a little.<br /><span class="headline-accent">Build a lot.</span></h1>
+        <p class="hero-lede">Learn to code with bite-sized lessons, real projects, and a tiny bit of magic. Start anywhere. Go at your pace.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#paths">Start learning free <span>↗</span></a><a class="text-link" href="#how">See how it works <span>↓</span></a></div>
+        <div class="hero-proof"><div class="avatar-stack"><span>👩🏽‍💻</span><span>🧑🏻‍🎨</span><span>👨🏾‍🚀</span><span>👩🏼‍🔬</span></div><div><strong>Made for curious minds</strong><small>No paywalls. Just progress.</small></div><div class="free-pill"><span>✦</span> ALWAYS FREE</div></div>
+      </div>
+      <div class="hero-art" aria-label="Preview of an interactive coding lesson">
+        <div class="shape shape-sun">✳</div><div class="shape shape-star">✦</div><div class="shape shape-dot"></div>
+        <div class="lesson-card">
+          <div class="lesson-top"><div class="mini-logo">m<span>·</span></div><div class="lesson-progress"><div class="progress-label"><span>HTML BASICS</span><span>2 / 5</span></div><div class="progress-track"><i style="width:40%"></i></div></div><div class="lesson-streak">🔥 3</div></div>
+          <div class="lesson-content"><div class="lesson-illustration"><span class="browser-icon">⌘</span><div class="code-lines"><i></i><i></i><i></i></div><span class="float-spark">✦</span></div><div class="lesson-kicker">QUICK CHECK</div><h3>Which tag makes a<br />big heading?</h3><p>Pick the right HTML element.</p>
+            <div class="answer-list"><button class="answer" data-answer="p"><code>&lt;p&gt;</code><span>paragraph</span><b></b></button><button class="answer" data-answer="h1"><code>&lt;h1&gt;</code><span>main heading</span><b></b></button><button class="answer" data-answer="img"><code>&lt;img&gt;</code><span>image</span><b></b></button></div>
+            <div class="answer-feedback" aria-live="polite">Choose your answer to keep going</div><button class="lesson-continue" disabled>Check answer <span>→</span></button>
+          </div>
+        </div>
+        <div class="floating-note note-left"><span>💡</span><div><strong>Learn by doing</strong><small>One tiny step at a time</small></div></div>
+        <div class="floating-note note-right"><span class="streak-icon">⚡</span><div><strong>You're on a roll!</strong><small>3 days in a row</small></div></div>
+      </div>
+    </section>
+
+    <section class="trust-strip"><span>YOUR IDEAS, IN CODE</span><div><b>HTML</b><i>✳</i><b>CSS</b><i>✳</i><b>JAVASCRIPT</b><i>✳</i><b>PYTHON</b><i>✳</i><b>SQL</b></div></section>
+
+    <section class="how-section section-wrap" id="how">
+      <div class="section-heading"><div><div class="eyebrow">SMALL STEPS, BIG MOMENTUM</div><h2>Learn it. Try it.<br /><span>Make it yours.</span></h2></div><p>Real coding, made friendly. Every lesson gives you a small win—and a reason to come back tomorrow.</p></div>
+      <div class="steps-grid"><article class="step-card step-learn"><div class="step-number">01 / LEARN</div><div class="step-visual visual-learn"><div class="paper-card"><span>Today’s tiny lesson</span><b>Meet your<br />first webpage</b><i>3 min read&nbsp; · &nbsp;✨</i></div><span class="visual-sticker">✳</span></div><h3>Clear, bite-sized lessons</h3><p>Fresh concepts, explained simply and built one little step at a time.</p></article>
+        <article class="step-card step-practice"><div class="step-number">02 / PRACTICE</div><div class="step-visual visual-practice"><div class="terminal-window"><div><i></i><i></i><i></i><span>index.html</span></div><code><em>&lt;h1&gt;</em>hello, world!<em>&lt;/h1&gt;</em><br /><u>▌</u></code></div><span class="check-badge">✓</span></div><h3>Practice as you go</h3><p>Write real code, get instant feedback, and learn from every try.</p></article>
+        <article class="step-card step-build"><div class="step-number">03 / BUILD</div><div class="step-visual visual-build"><div class="project-preview"><div class="preview-nav"><b>studio</b><span>work&nbsp;&nbsp; about&nbsp;&nbsp; contact</span></div><div class="preview-body"><small>DESIGNER · DEVELOPER</small><strong>Ideas into<br /><i>something real.</i></strong><span class="preview-button">EXPLORE MY WORK ↗</span></div><div class="preview-orb">✳</div></div><span class="build-spark">✦</span></div><h3>Build things you love</h3><p>Bring it all together in projects you can share with the world.</p></article></div>
+    </section>
+
+    <section class="paths-section" id="paths"><div class="section-wrap"><div class="section-heading paths-heading"><div><div class="eyebrow">PICK YOUR STARTING POINT</div><h2>What are you<br /><span>curious about?</span></h2></div><p>Choose a path that sounds fun. You can always switch it up later.</p></div>
+      <div class="path-grid"><article class="path-card path-web"><div class="path-icon">🌐</div><div class="path-meta"><span>START HERE</span><span class="duration">↗ 4 courses</span></div><h3>Make a website</h3><p>Turn your ideas into pages with HTML, CSS, and JavaScript.</p><div class="path-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><button class="path-cta" data-course="web">Explore path <span>↗</span></button></article>
+        <article class="path-card path-python"><div class="path-icon">🐍</div><div class="path-meta"><span>LOVED BY BEGINNERS</span><span class="duration">↗ 3 courses</span></div><h3>Speak Python</h3><p>Learn a friendly first language and make your computer do things.</p><div class="path-tags"><span>Python</span><span>Logic</span><span>Data</span></div><button class="path-cta" data-course="python">Explore path <span>↗</span></button></article>
+        <article class="path-card path-data"><div class="path-icon">✦</div><div class="path-meta"><span>MAKE SENSE OF DATA</span><span class="duration">↗ 2 courses</span></div><h3>Get curious with data</h3><p>Ask better questions and find answers with SQL and data basics.</p><div class="path-tags"><span>SQL</span><span>Databases</span><span>Data</span></div><button class="path-cta" data-course="sql">Explore path <span>↗</span></button></article></div>
+      <div class="path-footnote"><span>✿</span> Every path is free, forever. Your pace, your rules.</div></div></section>
+
+    <section class="courses-section section-wrap" id="courses"><div class="section-heading"><div><div class="eyebrow">YOUR TOOLBOX AWAITS</div><h2>Learn a language.<br /><span>Open a new door.</span></h2></div><p>Start with one. Find your next favorite along the way.</p></div><div class="course-toolbar"><div class="course-filters" role="group" aria-label="Filter courses"><button class="filter-button active" data-filter="all">All courses</button><button class="filter-button" data-filter="web">Web development</button><button class="filter-button" data-filter="code">Programming</button><button class="filter-button" data-filter="data">Data</button></div><span class="course-count">8 FREE COURSES</span></div>
+      <div class="course-grid">
+        <article class="course-card" data-category="web"><div class="course-art art-html"><span class="course-symbol">&lt;/&gt;</span><span class="art-orbit orbit-a"></span><span class="art-orbit orbit-b"></span><span class="course-level">BEGINNER</span></div><div class="course-info"><div><span class="course-type">WEB DEVELOPMENT</span><h3>HTML</h3><p>Give every idea a home on the web.</p></div><button class="course-arrow" data-course="html" aria-label="Start HTML course">↗</button></div><div class="course-progress"><span><i></i></span><small data-progress="html">0% complete</small></div></article>
+        <article class="course-card" data-category="web"><div class="course-art art-css"><span class="course-symbol">✳</span><span class="css-square"></span><span class="course-level">BEGINNER</span></div><div class="course-info"><div><span class="course-type">WEB DEVELOPMENT</span><h3>CSS</h3><p>Make the internet look like you.</p></div><button class="course-arrow" data-course="css" aria-label="Start CSS course">↗</button></div><div class="course-progress"><span><i></i></span><small data-progress="css">0% complete</small></div></article>
+        <article class="course-card" data-category="code web"><div class="course-art art-js"><span class="course-symbol">JS</span><span class="js-flower">✿</span><span class="course-level">BEGINNER</span></div><div class="course-info"><div><span class="course-type">PROGRAMMING</span><h3>JavaScript</h3><p>Make your pages come alive.</p></div><button class="course-arrow" data-course="javascript" aria-label="Start JavaScript course">↗</button></div><div class="course-progress"><span><i></i></span><small data-progress="javascript">0% complete</small></div></article>
+        <article class="course-card" data-category="code"><div class="course-art art-python"><span class="course-symbol">Py</span><span class="python-orb">●</span><span class="course-level">BEGINNER</span></div><div class="course-info"><div><span class="course-type">PROGRAMMING</span><h3>Python</h3><p>Think clearly. Build cleverly.</p></div><button class="course-arrow" data-course="python" aria-label="Start Python course">↗</button></div><div class="course-progress"><span><i></i></span><small data-progress="python">0% complete</small></div></article>
+        <article class="course-card" data-category="web"><div class="course-art art-react"><span class="course-symbol">⚛</span><span class="course-level">NEXT STEP</span></div><div class="course-info"><div><span class="course-type">WEB DEVELOPMENT</span><h3>React</h3><p>Build interfaces from little pieces.</p></div><button class="course-arrow" data-course="react" aria-label="Start React course">↗</button></div><div class="course-progress"><span><i></i></span><small data-progress="react">0% complete</small></div></article>
+        <article class="course-card" data-category="data"><div class="course-art art-sql"><span class="course-symbol">SQL</span><span class="sql-ring"></span><span class="course-level">BEGINNER</span></div><div class="course-info"><div><span class="course-type">DATA</span><h3>SQL</h3><p>Ask your data the right questions.</p></div><button class="course-arrow" data-course="sql" aria-label="Start SQL course">↗</button></div><div class="course-progress"><span><i></i></span><small data-progress="sql">0% complete</small></div></article>
+      </div><button class="button button-outline all-courses" data-toast="You're seeing all 8 free starter courses ✨">See all courses <span>↗</span></button></section>
+
+    <section class="project-section" id="projects"><div class="section-wrap project-layout"><div class="project-copy"><div class="eyebrow">FROM LESSONS TO LAUNCH</div><h2>Make something<br /><span>that's yours.</span></h2><p>Build your own little corner of the internet. A portfolio, a playlist app, a page for your dog—we'll help you get there, one line at a time.</p><a class="button button-dark" href="#courses">Find your first project <span>↗</span></a><div class="project-proof"><span>✦</span> No experience needed. Seriously.</div></div><div class="project-art"><div class="project-window"><div class="window-chrome"><span>● ● ●</span><i>your-first-portfolio.dev</i><b>↗</b></div><div class="portfolio"><div class="portfolio-nav"><strong>hello, i'm alex<span>.</span></strong><span>WORK&nbsp;&nbsp; ABOUT&nbsp;&nbsp; SAY HI</span></div><div class="portfolio-text"><label>DESIGNER · DEVELOPER · DAYDREAMER</label><h3>Making the<br />internet a <em>little</em><br />more human.</h3><a>TAKE A LOOK AROUND&nbsp; ↗</a></div><div class="portfolio-image"><span>✳</span><b>✿</b><i>✦</i></div><div class="portfolio-foot">A LITTLE BIT OF CODE, A LOT OF HEART. &nbsp; © 2025</div></div></div><div class="project-tag">YOUR FIRST PROJECT<br /><b>IN PROGRESS ✦</b></div></div></div></section>
+
+    <section class="final-cta section-wrap"><div class="cta-spark cta-left">✳</div><div class="eyebrow">YOUR FUTURE CALLED</div><h2>It's ready when<br />you are.</h2><p>One small lesson is all it takes to begin.</p><a class="button button-dark" href="#paths">Let's make it happen <span>↗</span></a><div class="cta-spark cta-right">✦</div></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">m<span>·</span></span><span>mini<span class="brand-light"> 2.0</span></span></a><span class="footer-note">A little code goes a long way. <b>Made for curious minds, everywhere.</b></span><div class="footer-links"><a href="#courses">Courses</a><a href="#projects">Projects</a><button data-toast="Mini 2.0 is free to learn and use.">About</button></div><span class="copyright">© 2025 MINI 2.0</span></footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <div class="modal-backdrop" id="lessonModal" aria-hidden="true"><section class="lesson-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" aria-label="Close lesson">×</button><div class="modal-eyebrow">MINI LESSON <span>·</span> FREE FOREVER</div><div class="modal-step"><span class="step-dot active"></span><span class="step-dot"></span><span class="step-dot"></span><i></i></div><div class="modal-emoji">🌱</div><h2 id="modalTitle">Your first tiny step</h2><p class="modal-description">A webpage starts with HTML—the building blocks that tell your browser what to show.</p><div class="modal-example"><span>TRY THIS</span><code>&lt;h1&gt;Hello, world!&lt;/h1&gt;</code><div class="example-preview"><small>YOUR BROWSER SEES</small><strong>Hello, world!</strong></div></div><p class="modal-question">What does <code>&lt;h1&gt;</code> make?</p><div class="modal-options"><button data-modal-answer="A large heading">A large heading <span>↗</span></button><button data-modal-answer="A picture">A picture <span>↗</span></button></div><div class="modal-result" aria-live="polite"></div><button class="modal-next" disabled>Check answer <span>→</span></button></section></div>
+  <script src="app.js"></script>
+</body>
+</html>
+
